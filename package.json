@@ -1,0 +1,27 @@
+{
+  "name": "rpt2-issue-433",
+  "version": "0.1.0",
+  "description": "Repro for rpt2 issue #443",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "rollup -c",
+    "watch": "rollup -cw",
+    "watch:fixed": "rollup -cw --useFixedTS"
+  },
+  "dependencies": {
+    "vue": "^3.4.25"
+  },
+  "devDependencies": {
+    "@rollup/plugin-html": "^1.0.3",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "chalk": "^5.3.0",
+    "rollup": "^4.16.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "rollup-plugin-typescript2-fixed": "git+https://github.com/ukhan/rollup-plugin-typescript2.git#bug/433",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  }
+}
